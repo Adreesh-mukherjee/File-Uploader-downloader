@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+          background-color: rgba(238, 246, 6, 0.997);
+        }
+      </style>
+  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 1</title>
+    <style>
+        .center {
+          text-align: center;
+        }
+      </style>
+</head>
+<body>
+    <h1 style="font-size: 56px;" class="center">Welcome to your Dashboard !!</h1>
+    <p style="font-size: 25px;" class="center">Proceed with the uploads/downloads</p>
+    <p style="font-size: 22px;" class="center">|| Proceed with these steps ||</p>
+    <ul style="background-color: rgb(95, 174, 213);" class="center">
+        <li class="center"> Enter the filename to upload.</li>
+        <li class="center"> Choose file and click on *upload* button.</li>
+        <li class="center"> To download, enter filename and click on *download* button.</li>
+      </ul>
+    <br>
+    <br>
+    <br>
+    <label>ENTER FILENAME TO UPLOAD : </label>
+    <input type="text" name="filename" id="">
+    <br>
+    <br>
+    
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" id="">
+        <button type="submit">Upload</button>
+    </form>
+    <br>
+    <br>
+    <br>
+    
+    
+
+    <form action="/download" method="post">
+        <label>ENTER FILENAME TO DOWNLOAD : </label>
+        <input type="text" name="filename" id="filename">
+        <button type="submit">download</button>
+    </form>
+    
+</body>
+</html>
